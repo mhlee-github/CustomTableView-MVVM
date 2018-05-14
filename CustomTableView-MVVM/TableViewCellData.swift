@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct TableViewCellData {
+  var text: String
+}

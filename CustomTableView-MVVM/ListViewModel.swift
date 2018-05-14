@@ -10,34 +10,62 @@ import Foundation
 import RxSwift
 
 protocol ListViewModelInput {
+  func numberOfListViewSections() -> Int
+  func numberOfListViewRows(inSection section: Int) -> Int
+  func textForListViewCell(atSection section: Int, atRow row: Int) -> String
+  
   func addNewRow()
   func removeFirstRow()
 }
 
+enum ListViewModelEvent {
+  case test
+}
+
 protocol ListViewModelOutput {
-  var strings: Observable<[String]> { get }
+  var listViewModelEventQueue: PublishSubject<ListViewModelEvent> { get }
 }
 
 class ListViewModel {
+  private let disposeBag = DisposeBag()
   
-  let listModel: ListModel
+  private let listModel: ListModel
+  private let eventQueue: PublishSubject<ListViewModelEvent> = PublishSubject<ListViewModelEvent>()
   
   init() {
     listModel = ListModel()
+        
+    listModel.textsEvents.subscribe(onNext: { event in
+      print(event)
+    }).disposed(by: disposeBag)
   }
 }
 
 extension ListViewModel: ListViewModelInput {
+  func numberOfListViewSections() -> Int {
+    return 3
+  }
+  
+  func numberOfListViewRows(inSection section: Int) -> Int {
+    return 3
+  }
+  
+  func textForListViewCell(atSection section: Int, atRow row: Int) -> String {
+    return "text"
+  }
+  
   func addNewRow() {
     let string = UUID().uuidString
-    listModel.add(string)
+    listModel.insert(string: string, at: 0)
   }
   
   func removeFirstRow() {
-    listModel.removeFirst()
+    if listModel.texts.count > 0 {
+      listModel.remove(at: 0)
+    }
   }
 }
 
 extension ListViewModel: ListViewModelOutput {
-  var strings: Observable<[String]> { return listModel.strings.asObservable() }
+  var listViewModelEventQueue: PublishSubject<ListViewModelEvent> { return eventQueue }
 }

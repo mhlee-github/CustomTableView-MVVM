@@ -10,8 +10,6 @@ import UIKit
 import SnapKit
 
 class ListView: UIView {
-  static let cellIdentifier = "cell"
-  
   let addButton: UIButton = {
     let button = UIButton()
     button.setTitle("add", for: .normal)
@@ -29,8 +27,8 @@ class ListView: UIView {
   let tableView: UITableView = {
     let tableView = UITableView()
     tableView.backgroundColor = .red
-    tableView.register(UITableViewCell.self, forCellReuseIdentifier: ListView.cellIdentifier)
-
+    tableView.register(TableViewCell.self, forCellReuseIdentifier: TableViewCell.cellIdentifier)
+    
     return tableView
   }()
   
