@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F21F5CCEE7812C37396F8B7 /* Pods_CustomTableView_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0E15EF7711202B4BA3BF29 /* Pods_CustomTableView_MVVM.framework */; };
 		8237E88420A52D1B00EC63FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237E88320A52D1B00EC63FF /* AppDelegate.swift */; };
-		8237E88620A52D1B00EC63FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237E88520A52D1B00EC63FF /* ViewController.swift */; };
 		8237E88920A52D1B00EC63FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8237E88720A52D1B00EC63FF /* Main.storyboard */; };
 		8237E88B20A52D1C00EC63FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8237E88A20A52D1C00EC63FF /* Assets.xcassets */; };
 		8237E88E20A52D1C00EC63FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8237E88C20A52D1C00EC63FF /* LaunchScreen.storyboard */; };
+		8237E89920A52EE800EC63FF /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237E89520A52EE800EC63FF /* ListViewModel.swift */; };
+		8237E89A20A52EE800EC63FF /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237E89620A52EE800EC63FF /* ListViewController.swift */; };
+		8237E89B20A52EE800EC63FF /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237E89720A52EE800EC63FF /* ListModel.swift */; };
+		8237E89C20A52EE800EC63FF /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237E89820A52EE800EC63FF /* ListView.swift */; };
+		8237E8B720A5959700EC63FF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237E8B620A5959700EC63FF /* TableViewCell.swift */; };
+		8237E8B920A59B0F00EC63FF /* TableViewCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237E8B820A59B0F00EC63FF /* TableViewCellData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0204C140D0D2A20D6F7BD8AB /* Pods-CustomTableView-MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomTableView-MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomTableView-MVVM/Pods-CustomTableView-MVVM.release.xcconfig"; sourceTree = "<group>"; };
 		8237E88020A52D1B00EC63FF /* CustomTableView-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CustomTableView-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8237E88320A52D1B00EC63FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8237E88520A52D1B00EC63FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8237E88820A52D1B00EC63FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8237E88A20A52D1C00EC63FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8237E88D20A52D1C00EC63FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8237E88F20A52D1C00EC63FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8237E89520A52EE800EC63FF /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		8237E89620A52EE800EC63FF /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		8237E89720A52EE800EC63FF /* ListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		8237E89820A52EE800EC63FF /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		8237E8B620A5959700EC63FF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8237E8B820A59B0F00EC63FF /* TableViewCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellData.swift; sourceTree = "<group>"; };
+		8E0E15EF7711202B4BA3BF29 /* Pods_CustomTableView_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomTableView_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE9E14CA63DDE0F4821480F7 /* Pods-CustomTableView-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomTableView-MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomTableView-MVVM/Pods-CustomTableView-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F21F5CCEE7812C37396F8B7 /* Pods_CustomTableView_MVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				8237E88220A52D1B00EC63FF /* CustomTableView-MVVM */,
 				8237E88120A52D1B00EC63FF /* Products */,
+				D10F9178A603179BE7E2D65E /* Pods */,
+				9824CB974D03D5462CA99467 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +72,35 @@
 			isa = PBXGroup;
 			children = (
 				8237E88320A52D1B00EC63FF /* AppDelegate.swift */,
-				8237E88520A52D1B00EC63FF /* ViewController.swift */,
+				8237E89620A52EE800EC63FF /* ListViewController.swift */,
+				8237E89820A52EE800EC63FF /* ListView.swift */,
+				8237E8B620A5959700EC63FF /* TableViewCell.swift */,
+				8237E8B820A59B0F00EC63FF /* TableViewCellData.swift */,
+				8237E89520A52EE800EC63FF /* ListViewModel.swift */,
+				8237E89720A52EE800EC63FF /* ListModel.swift */,
 				8237E88720A52D1B00EC63FF /* Main.storyboard */,
 				8237E88A20A52D1C00EC63FF /* Assets.xcassets */,
 				8237E88C20A52D1C00EC63FF /* LaunchScreen.storyboard */,
 				8237E88F20A52D1C00EC63FF /* Info.plist */,
 			);
 			path = "CustomTableView-MVVM";
+			sourceTree = "<group>";
+		};
+		9824CB974D03D5462CA99467 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E0E15EF7711202B4BA3BF29 /* Pods_CustomTableView_MVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D10F9178A603179BE7E2D65E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE9E14CA63DDE0F4821480F7 /* Pods-CustomTableView-MVVM.debug.xcconfig */,
+				0204C140D0D2A20D6F7BD8AB /* Pods-CustomTableView-MVVM.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8237E89220A52D1C00EC63FF /* Build configuration list for PBXNativeTarget "CustomTableView-MVVM" */;
 			buildPhases = (
+				EE6912DDEA11EC4A054B557A /* [CP] Check Pods Manifest.lock */,
 				8237E87C20A52D1B00EC63FF /* Sources */,
 				8237E87D20A52D1B00EC63FF /* Frameworks */,
 				8237E87E20A52D1B00EC63FF /* Resources */,
+				0BBAF0FD10C73BED690AE568 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +171,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BBAF0FD10C73BED690AE568 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CustomTableView-MVVM/Pods-CustomTableView-MVVM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomTableView-MVVM/Pods-CustomTableView-MVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE6912DDEA11EC4A054B557A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomTableView-MVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8237E87C20A52D1B00EC63FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8237E88620A52D1B00EC63FF /* ViewController.swift in Sources */,
+				8237E89920A52EE800EC63FF /* ListViewModel.swift in Sources */,
+				8237E8B920A59B0F00EC63FF /* TableViewCellData.swift in Sources */,
 				8237E88420A52D1B00EC63FF /* AppDelegate.swift in Sources */,
+				8237E89C20A52EE800EC63FF /* ListView.swift in Sources */,
+				8237E8B720A5959700EC63FF /* TableViewCell.swift in Sources */,
+				8237E89A20A52EE800EC63FF /* ListViewController.swift in Sources */,
+				8237E89B20A52EE800EC63FF /* ListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +371,7 @@
 		};
 		8237E89320A52D1C00EC63FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE9E14CA63DDE0F4821480F7 /* Pods-CustomTableView-MVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +390,7 @@
 		};
 		8237E89420A52D1C00EC63FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0204C140D0D2A20D6F7BD8AB /* Pods-CustomTableView-MVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
